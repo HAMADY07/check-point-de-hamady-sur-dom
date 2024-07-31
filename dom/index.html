@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Panier d'Achat</title>
+                        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+            <div class="cart">
+                        <h1>Votre Panier</h1>
+                                <div class="cart-item" data-id="1">
+                                                <span class="item-name">Article 1</span>
+                                                            <button class="like-button" onclick="toggleLike(this)"></button>
+                                                                        <button class="remove-button" onclick="removeItem(this)">Supprimer</button>
+                                                                                    <input type="number" class="quantity" value="1" min="1" onchange="updateTotal()">
+                                                                                                <span class="item-price" data-price="20">20€</span>
+                                </div>
+                                        <div class="cart-item" data-id="2">
+                                                        <span class="item-name">Article 2</span>
+                                                                    <button class="like-button" onclick="toggleLike(this)"></button>
+                                                                                <button class="remove-button" onclick="removeItem(this)">Supprimer</button>
+                                                                                            <input type="number" class="quantity" value="1" min="1" onchange="updateTotal()">
+                                                                                                        <span class="item-price" data-price="30">30€</span>
+                                        </div>
+                                                <div class="total">
+                                                                <span>Total: </span><span id="total-price">50€</span>
+                                                </div>
+                                            </div>
+                                                <script src="scripts.js"></script>
+                                        </body>
+                                        </html>
